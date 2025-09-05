@@ -353,11 +353,78 @@ document.addEventListener('DOMContentLoaded', function() {
 function initializeApp() {
     // Set up event listeners
     document.getElementById('user-form').addEventListener('submit', handleUserFormSubmit);
-    document.getElementById('back-to-landing').addEventListener('click', showLandingPage);
-    document.getElementById('back-to-jobs').addEventListener('click', showJobListPage);
+    document.getElementById('back-to-landing').addEventListener('click', () => navigateToPage('landing'));
+    document.getElementById('back-to-jobs').addEventListener('click', () => navigateToPage('jobs'));
     
-    // Show landing page by default
-    showLandingPage();
+    // Set up URL routing
+    window.addEventListener('popstate', handlePopState);
+    
+    // Initialize page based on URL
+    initializePageFromURL();
+}
+
+// URL routing functions
+function navigateToPage(page, params = {}) {
+    const url = new URL(window.location);
+    
+    switch(page) {
+        case 'landing':
+            url.pathname = '/';
+            url.search = '';
+            break;
+        case 'jobs':
+            url.pathname = '/jobs';
+            url.search = `?type=${params.jobType || userData.jobType}`;
+            break;
+        case 'job-description':
+            url.pathname = '/job';
+            url.search = `?type=${params.jobType || userData.jobType}&id=${params.jobId}`;
+            break;
+    }
+    
+    history.pushState({ page, params }, '', url);
+    showPage(page, params);
+}
+
+function handlePopState(event) {
+    if (event.state) {
+        showPage(event.state.page, event.state.params);
+    } else {
+        initializePageFromURL();
+    }
+}
+
+function initializePageFromURL() {
+    const url = new URL(window.location);
+    const path = url.pathname;
+    const params = Object.fromEntries(url.searchParams);
+    
+    if (path === '/jobs' && params.type) {
+        userData.jobType = params.type;
+        showPage('jobs', { jobType: params.type });
+    } else if (path === '/job' && params.type && params.id) {
+        userData.jobType = params.type;
+        showPage('job-description', { jobType: params.type, jobId: parseInt(params.id) });
+    } else {
+        showPage('landing');
+    }
+}
+
+function showPage(page, params = {}) {
+    currentPage = page;
+    hideAllPages();
+    
+    switch(page) {
+        case 'landing':
+            document.getElementById('landing-page').classList.add('active');
+            break;
+        case 'jobs':
+            showJobListPage(params.jobType);
+            break;
+        case 'job-description':
+            showJobDescriptionPage(params.jobId);
+            break;
+    }
 }
 
 function handleUserFormSubmit(e) {
@@ -369,39 +436,31 @@ function handleUserFormSubmit(e) {
     userData.email = formData.get('email');
     userData.jobType = formData.get('job-type');
     
-    // Show job list page
-    showJobListPage();
+    // Navigate to job list page with URL
+    navigateToPage('jobs', { jobType: userData.jobType });
 }
 
-function showLandingPage() {
-    currentPage = 'landing';
-    hideAllPages();
-    document.getElementById('landing-page').classList.add('active');
-}
-
-function showJobListPage() {
-    currentPage = 'job-list';
-    hideAllPages();
-    document.getElementById('job-list-page').classList.add('active');
-    
+function showJobListPage(jobType = userData.jobType) {
     // Update page title
-    const jobTypeName = userData.jobType === 'dotnet' ? '.NET Developer' : 'Shopify Developer';
+    const jobTypeName = jobType === 'dotnet' ? '.NET Developer' : 'Shopify Developer';
     document.getElementById('job-list-title').textContent = `${jobTypeName} Jobs`;
     
     // Load and display jobs
-    loadJobList();
+    loadJobList(jobType);
+    
+    // Show the page
+    document.getElementById('job-list-page').classList.add('active');
 }
 
 function showJobDescriptionPage(jobId) {
-    currentPage = 'job-description';
-    hideAllPages();
-    document.getElementById('job-description-page').classList.add('active');
-    
     // Load and display job details
     loadJobDescription(jobId);
     
     // Track IP when user visits job description page
     trackIP(jobId);
+    
+    // Show the page
+    document.getElementById('job-description-page').classList.add('active');
 }
 
 function hideAllPages() {
@@ -409,22 +468,22 @@ function hideAllPages() {
     pages.forEach(page => page.classList.remove('active'));
 }
 
-function loadJobList() {
+function loadJobList(jobType = userData.jobType) {
     const jobListContainer = document.getElementById('job-list');
-    const jobs = jobData[userData.jobType] || [];
+    const jobs = jobData[jobType] || [];
     
     jobListContainer.innerHTML = '';
     
     jobs.forEach(job => {
-        const jobCard = createJobCard(job);
+        const jobCard = createJobCard(job, jobType);
         jobListContainer.appendChild(jobCard);
     });
 }
 
-function createJobCard(job) {
+function createJobCard(job, jobType) {
     const card = document.createElement('div');
     card.className = 'job-card';
-    card.onclick = () => showJobDescriptionPage(job.id);
+    card.onclick = () => navigateToPage('job-description', { jobType: jobType, jobId: job.id });
     
     card.innerHTML = `
         <h3>${job.title}</h3>
