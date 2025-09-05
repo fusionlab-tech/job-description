@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Interview Training Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Job Interview Training Platform</h1>
+            <p>Practice your interview skills with real job descriptions</p>
+        </header>
+
+        <main id="main-content">
+            <!-- Landing Page -->
+            <div id="landing-page" class="page active">
+                <div class="form-container">
+                    <h2>Get Started</h2>
+                    <form id="user-form">
+                        <div class="form-group">
+                            <label for="user-name">Full Name</label>
+                            <input type="text" id="user-name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="user-email">Email Address</label>
+                            <input type="email" id="user-email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Select Job Type</label>
+                            <div class="job-types">
+                                <label class="job-type-option">
+                                    <input type="radio" name="job-type" value="dotnet" required>
+                                    <span class="job-type-card">
+                                        <h3>.NET Developer</h3>
+                                        <p>Backend development with C# and .NET framework</p>
+                                    </span>
+                                </label>
+                                
+                                <label class="job-type-option">
+                                    <input type="radio" name="job-type" value="shopify" required>
+                                    <span class="job-type-card">
+                                        <h3>Shopify Developer</h3>
+                                        <p>E-commerce development with Shopify platform</p>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary">Next</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Job List Page -->
+            <div id="job-list-page" class="page">
+                <div class="page-header">
+                    <h2 id="job-list-title">Available Jobs</h2>
+                    <button id="back-to-landing" class="btn-secondary">Back</button>
+                </div>
+                <div id="job-list" class="job-grid">
+                    <!-- Jobs will be dynamically loaded here -->
+                </div>
+            </div>
+
+            <!-- Job Description Page -->
+            <div id="job-description-page" class="page">
+                <div class="page-header">
+                    <h2 id="job-title">Job Description</h2>
+                    <button id="back-to-jobs" class="btn-secondary">Back to Jobs</button>
+                </div>
+                <div id="job-content">
+                    <!-- Job details will be dynamically loaded here -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
