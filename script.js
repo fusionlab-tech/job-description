@@ -518,15 +518,39 @@ function loadJobDescription(jobId) {
 function createJobDescriptionHTML(job) {
     return `
         <div class="job-description">
-            <div class="company-info">
-                <h4>${job.company}</h4>
-                <p><strong>Location:</strong> ${job.location}</p>
-                <p><strong>Job Type:</strong> ${userData.jobType === 'dotnet' ? '.NET Developer' : 'Shopify Developer'}</p>
+            <div class="section company-name">
+                <h2>${job.company}</h2>
             </div>
             
-            <div class="section">
+            <div class="section position">
+                <h3>Position: ${userData.jobType === 'dotnet' ? '.NET Developer' : 'Shopify Developer'}</h3>
+            </div>
+            
+            <div class="section job-description">
                 <h4>Job Description</h4>
                 <p>${job.description}</p>
+            </div>
+            
+            <div class="section company-detail">
+                <h4>Company Detail</h4>
+                <div class="company-info-grid">
+                    <div class="info-item">
+                        <span class="info-label">Company:</span>
+                        <span class="info-value">${job.company}</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Location:</span>
+                        <span class="info-value">${job.location}</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Position:</span>
+                        <span class="info-value">${userData.jobType === 'dotnet' ? '.NET Developer' : 'Shopify Developer'}</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Job ID:</span>
+                        <span class="info-value">#${job.id}</span>
+                    </div>
+                </div>
             </div>
             
             <div class="section">

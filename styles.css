@@ -262,17 +262,72 @@ header p {
     font-size: 1.8rem;
 }
 
-.job-description .company-info {
+.job-description .company-name {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #667eea;
+}
+
+.job-description .company-name h2 {
+    color: #333;
+    font-size: 2.5rem;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.job-description .position {
+    text-align: center;
+    margin-bottom: 25px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.job-description .position h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.job-description .company-detail {
     background: #f8f9fa;
-    padding: 20px;
-    border-radius: 8px;
+    padding: 25px;
+    border-radius: 10px;
     margin-bottom: 25px;
     border-left: 4px solid #667eea;
 }
 
-.job-description .company-info h4 {
+.job-description .company-detail h4 {
     color: #667eea;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.company-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.company-info-grid .info-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.company-info-grid .info-label {
+    font-weight: 600;
+    color: #555;
+}
+
+.company-info-grid .info-value {
+    color: #333;
+    font-weight: 500;
 }
 
 .job-description .section {
