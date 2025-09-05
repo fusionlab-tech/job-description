@@ -6,7 +6,14 @@ const jobData = {
             title: "Senior .NET Developer",
             company: "TechCorp Solutions",
             location: "New York, NY",
-            description: "We are looking for an experienced .NET developer to join our backend team. You will work on building scalable web applications and APIs.",
+            description: "We are looking for an experienced .NET developer to join our backend team. You will work on building scalable web applications and APIs that serve millions of users worldwide. This role involves working with cutting-edge technologies and collaborating with a talented team of engineers to deliver high-quality software solutions.",
+            companyDetail: {
+                industry: "Technology & Software",
+                size: "500-1000 employees",
+                founded: "2010",
+                website: "www.techcorp-solutions.com",
+                description: "TechCorp Solutions is a leading technology company specializing in enterprise software solutions. We help businesses transform their operations through innovative software development and digital transformation services."
+            },
             skills: ["C#", ".NET Core", "ASP.NET", "Entity Framework", "SQL Server", "Azure"],
             requirements: [
                 "5+ years of experience with .NET development",
@@ -38,7 +45,14 @@ const jobData = {
             title: "Full Stack .NET Developer",
             company: "InnovateTech",
             location: "San Francisco, CA",
-            description: "Join our dynamic team as a Full Stack .NET Developer. You'll work on both frontend and backend development using modern .NET technologies.",
+            description: "Join our dynamic team as a Full Stack .NET Developer. You'll work on both frontend and backend development using modern .NET technologies. This position offers the opportunity to work on innovative projects that impact thousands of users while growing your skills in a fast-paced startup environment.",
+            companyDetail: {
+                industry: "Fintech & Innovation",
+                size: "50-200 employees",
+                founded: "2018",
+                website: "www.innovatetech.io",
+                description: "InnovateTech is a rapidly growing fintech startup focused on revolutionizing digital banking solutions. We combine cutting-edge technology with user-centered design to create financial products that make a difference."
+            },
             skills: ["C#", ".NET 6", "Blazor", "React", "TypeScript", "PostgreSQL", "Docker"],
             requirements: [
                 "3+ years of full-stack development experience",
@@ -70,7 +84,14 @@ const jobData = {
             title: ".NET Core API Developer",
             company: "DataFlow Systems",
             location: "Austin, TX",
-            description: "We need a skilled .NET Core developer to build high-performance APIs for our data processing platform. Experience with microservices architecture preferred.",
+            description: "We need a skilled .NET Core developer to build high-performance APIs for our data processing platform. Experience with microservices architecture preferred. You'll be working on systems that handle millions of data points daily, ensuring scalability and reliability in our cloud-native infrastructure.",
+            companyDetail: {
+                industry: "Data & Analytics",
+                size: "200-500 employees",
+                founded: "2015",
+                website: "www.dataflow-systems.com",
+                description: "DataFlow Systems specializes in real-time data processing and analytics solutions. We help enterprises make data-driven decisions through our cutting-edge data platform and machine learning capabilities."
+            },
             skills: ["C#", ".NET Core", "Web API", "Microservices", "RabbitMQ", "Redis", "MongoDB"],
             requirements: [
                 "4+ years of .NET Core development experience",
@@ -102,7 +123,14 @@ const jobData = {
             title: "Enterprise .NET Developer",
             company: "GlobalTech Enterprises",
             location: "Chicago, IL",
-            description: "Join our enterprise development team to work on large-scale business applications. Experience with enterprise patterns and frameworks required.",
+            description: "Join our enterprise development team to work on large-scale business applications. Experience with enterprise patterns and frameworks required. This role involves maintaining and enhancing mission-critical systems that support thousands of users across multiple business units.",
+            companyDetail: {
+                industry: "Enterprise Software",
+                size: "1000+ employees",
+                founded: "2005",
+                website: "www.globaltech-enterprises.com",
+                description: "GlobalTech Enterprises is a Fortune 500 company providing comprehensive enterprise software solutions to businesses worldwide. We specialize in ERP, CRM, and business intelligence platforms that drive operational excellence."
+            },
             skills: ["C#", ".NET Framework", "WCF", "WPF", "SQL Server", "IIS", "Enterprise Patterns"],
             requirements: [
                 "6+ years of enterprise .NET development",
@@ -134,7 +162,14 @@ const jobData = {
             title: "Cloud .NET Developer",
             company: "CloudFirst Solutions",
             location: "Seattle, WA",
-            description: "We're seeking a cloud-focused .NET developer to build and deploy applications on Azure. Experience with cloud-native development is essential.",
+            description: "We're seeking a cloud-focused .NET developer to build and deploy applications on Azure. Experience with cloud-native development is essential. You'll work on next-generation cloud applications that leverage the full power of Microsoft Azure to deliver scalable, reliable solutions.",
+            companyDetail: {
+                industry: "Cloud Computing",
+                size: "100-300 employees",
+                founded: "2017",
+                website: "www.cloudfirst-solutions.com",
+                description: "CloudFirst Solutions is a Microsoft Gold Partner specializing in cloud migration and modern application development. We help organizations transform their IT infrastructure and applications to take full advantage of cloud technologies."
+            },
             skills: ["C#", ".NET 6", "Azure", "Azure Functions", "Cosmos DB", "Service Bus", "DevOps"],
             requirements: [
                 "3+ years of .NET development experience",
@@ -168,7 +203,14 @@ const jobData = {
             title: "Senior Shopify Developer",
             company: "E-commerce Pro",
             location: "Los Angeles, CA",
-            description: "We're looking for an experienced Shopify developer to lead our e-commerce development team. You'll work on custom themes, apps, and integrations.",
+            description: "We're looking for an experienced Shopify developer to lead our e-commerce development team. You'll work on custom themes, apps, and integrations that power online stores generating millions in revenue. This role offers the opportunity to shape the future of e-commerce technology.",
+            companyDetail: {
+                industry: "E-commerce & Retail",
+                size: "100-250 employees",
+                founded: "2016",
+                website: "www.ecommerce-pro.com",
+                description: "E-commerce Pro is a leading digital agency specializing in Shopify development and e-commerce solutions. We help brands create exceptional online shopping experiences that drive sales and customer engagement."
+            },
             skills: ["Liquid", "JavaScript", "Shopify API", "GraphQL", "CSS/SCSS", "React", "Node.js"],
             requirements: [
                 "4+ years of Shopify development experience",
@@ -200,7 +242,14 @@ const jobData = {
             title: "Shopify Plus Developer",
             company: "Enterprise Commerce",
             location: "Miami, FL",
-            description: "Join our team as a Shopify Plus developer working with enterprise clients. Experience with Shopify Plus features and customizations required.",
+            description: "Join our team as a Shopify Plus developer working with enterprise clients. Experience with Shopify Plus features and customizations required. You'll work with Fortune 500 companies to build sophisticated e-commerce solutions that handle high-volume transactions and complex business requirements.",
+            companyDetail: {
+                industry: "Enterprise E-commerce",
+                size: "300-600 employees",
+                founded: "2014",
+                website: "www.enterprise-commerce.com",
+                description: "Enterprise Commerce is a premier Shopify Plus partner specializing in large-scale e-commerce implementations. We work exclusively with enterprise clients to deliver complex, high-performance online stores that drive business growth."
+            },
             skills: ["Shopify Plus", "Liquid", "JavaScript", "Shopify Scripts", "Checkout Extensions", "B2B", "Multi-store"],
             requirements: [
                 "3+ years of Shopify Plus development experience",
@@ -232,7 +281,14 @@ const jobData = {
             title: "Shopify App Developer",
             company: "AppCraft Studio",
             location: "Portland, OR",
-            description: "We're seeking a creative Shopify app developer to build innovative solutions for the Shopify ecosystem. Experience with app development and publishing preferred.",
+            description: "We're seeking a creative Shopify app developer to build innovative solutions for the Shopify ecosystem. Experience with app development and publishing preferred. You'll create apps that enhance the Shopify experience for thousands of merchants worldwide.",
+            companyDetail: {
+                industry: "SaaS & App Development",
+                size: "25-75 employees",
+                founded: "2019",
+                website: "www.appcraft-studio.com",
+                description: "AppCraft Studio is a boutique development agency focused on creating innovative Shopify apps and integrations. We specialize in building tools that help merchants optimize their online stores and increase sales."
+            },
             skills: ["Node.js", "React", "Shopify App CLI", "GraphQL", "Webhooks", "OAuth", "MongoDB"],
             requirements: [
                 "3+ years of full-stack development experience",
@@ -264,7 +320,14 @@ const jobData = {
             title: "Shopify Theme Developer",
             company: "DesignForward Agency",
             location: "Denver, CO",
-            description: "Join our design agency as a Shopify theme developer. You'll work with designers to create beautiful, custom themes for our clients.",
+            description: "Join our design agency as a Shopify theme developer. You'll work with designers to create beautiful, custom themes for our clients. This role combines technical expertise with creative vision to deliver stunning e-commerce experiences that convert visitors into customers.",
+            companyDetail: {
+                industry: "Design & Development",
+                size: "50-150 employees",
+                founded: "2017",
+                website: "www.designforward-agency.com",
+                description: "DesignForward Agency is a creative digital agency specializing in e-commerce design and development. We combine stunning visual design with technical excellence to create online stores that stand out in the competitive e-commerce landscape."
+            },
             skills: ["Liquid", "HTML5", "CSS3/SCSS", "JavaScript", "Responsive Design", "Performance Optimization", "SEO"],
             requirements: [
                 "2+ years of Shopify theme development experience",
@@ -296,7 +359,14 @@ const jobData = {
             title: "Shopify Integration Developer",
             company: "ConnectTech Solutions",
             location: "Boston, MA",
-            description: "We need a Shopify integration developer to build custom integrations between Shopify stores and various business systems.",
+            description: "We need a Shopify integration developer to build custom integrations between Shopify stores and various business systems. You'll work on complex data synchronization solutions that connect e-commerce platforms with ERP, CRM, and other enterprise systems.",
+            companyDetail: {
+                industry: "Integration & Automation",
+                size: "75-200 employees",
+                founded: "2018",
+                website: "www.connecttech-solutions.com",
+                description: "ConnectTech Solutions specializes in e-commerce integrations and automation. We help businesses streamline their operations by connecting Shopify stores with their existing business systems and workflows."
+            },
             skills: ["Shopify API", "REST/GraphQL", "Webhooks", "Python", "PostgreSQL", "AWS", "Docker"],
             requirements: [
                 "3+ years of integration development experience",
@@ -321,6 +391,203 @@ const jobData = {
                 "Flexible remote work options",
                 "Professional development and certification support",
                 "401(k) with company matching"
+            ]
+        }
+    ],
+    flutter: [
+        {
+            id: 1,
+            title: "Senior Flutter Developer",
+            company: "MobileFirst Solutions",
+            location: "San Diego, CA",
+            description: "We're seeking an experienced Flutter developer to lead our mobile development team. You'll work on cutting-edge cross-platform applications that serve millions of users across iOS and Android. This role offers the opportunity to shape the future of mobile technology while working with the latest Flutter features and best practices.",
+            companyDetail: {
+                industry: "Mobile Technology",
+                size: "150-400 employees",
+                founded: "2019",
+                website: "www.mobilefirst-solutions.com",
+                description: "MobileFirst Solutions is a leading mobile app development company specializing in cross-platform solutions. We help businesses create engaging mobile experiences that drive user engagement and business growth across all platforms."
+            },
+            skills: ["Flutter", "Dart", "Firebase", "REST APIs", "State Management", "iOS", "Android"],
+            requirements: [
+                "4+ years of mobile development experience",
+                "2+ years of Flutter development experience",
+                "Strong knowledge of Dart programming language",
+                "Experience with state management (Provider, Bloc, Riverpod)",
+                "Familiarity with Firebase services",
+                "Experience with RESTful APIs and GraphQL",
+                "Knowledge of mobile app architecture patterns"
+            ],
+            responsibilities: [
+                "Develop cross-platform mobile applications using Flutter",
+                "Implement state management solutions",
+                "Integrate with backend APIs and services",
+                "Optimize app performance and user experience",
+                "Collaborate with UI/UX designers",
+                "Write clean, maintainable, and testable code"
+            ],
+            benefits: [
+                "Competitive salary with stock options",
+                "Comprehensive health and dental coverage",
+                "Flexible work arrangements",
+                "Professional development budget",
+                "Latest development tools and equipment"
+            ]
+        },
+        {
+            id: 2,
+            title: "Flutter UI/UX Developer",
+            company: "Creative Apps Studio",
+            location: "Austin, TX",
+            description: "Join our creative team as a Flutter UI/UX Developer. You'll focus on creating beautiful, intuitive user interfaces that provide exceptional user experiences. This role combines technical Flutter expertise with creative design skills to build stunning mobile applications.",
+            companyDetail: {
+                industry: "Design & Mobile Apps",
+                size: "50-150 employees",
+                founded: "2020",
+                website: "www.creativeapps-studio.com",
+                description: "Creative Apps Studio is a boutique mobile app development agency known for creating visually stunning and user-friendly applications. We specialize in custom mobile solutions that combine beautiful design with powerful functionality."
+            },
+            skills: ["Flutter", "Dart", "Material Design", "Custom Widgets", "Animations", "Responsive Design", "Figma"],
+            requirements: [
+                "3+ years of mobile UI development experience",
+                "2+ years of Flutter development",
+                "Strong understanding of Material Design and Cupertino widgets",
+                "Experience with custom widget development",
+                "Knowledge of Flutter animations and transitions",
+                "Familiarity with design tools (Figma, Sketch)",
+                "Eye for detail and user experience"
+            ],
+            responsibilities: [
+                "Create beautiful and responsive user interfaces",
+                "Develop custom widgets and components",
+                "Implement smooth animations and transitions",
+                "Ensure consistent design across platforms",
+                "Collaborate closely with designers",
+                "Optimize UI performance and responsiveness"
+            ],
+            benefits: [
+                "Competitive salary with performance bonuses",
+                "Health insurance and retirement plan",
+                "Creative and inspiring work environment",
+                "Professional development opportunities",
+                "Team building and creative workshops"
+            ]
+        },
+        {
+            id: 3,
+            title: "Flutter Backend Integration Developer",
+            company: "DataSync Technologies",
+            location: "Seattle, WA",
+            description: "We need a Flutter developer with strong backend integration skills to build robust mobile applications that seamlessly connect with our cloud infrastructure. You'll work on complex data synchronization and real-time features that power our enterprise mobile solutions.",
+            companyDetail: {
+                industry: "Enterprise Software",
+                size: "200-500 employees",
+                founded: "2017",
+                website: "www.datasync-technologies.com",
+                description: "DataSync Technologies specializes in enterprise mobile solutions and data synchronization platforms. We help large organizations build secure, scalable mobile applications that integrate seamlessly with their existing business systems."
+            },
+            skills: ["Flutter", "Dart", "Node.js", "GraphQL", "WebSockets", "SQLite", "Cloud Services"],
+            requirements: [
+                "3+ years of Flutter development experience",
+                "Strong backend integration skills",
+                "Experience with REST APIs and GraphQL",
+                "Knowledge of real-time data synchronization",
+                "Familiarity with cloud services (AWS, Firebase)",
+                "Experience with local database management",
+                "Understanding of security best practices"
+            ],
+            responsibilities: [
+                "Develop Flutter apps with complex backend integrations",
+                "Implement real-time data synchronization",
+                "Build secure API communication layers",
+                "Optimize data flow and caching strategies",
+                "Ensure data consistency across platforms",
+                "Collaborate with backend development teams"
+            ],
+            benefits: [
+                "Competitive salary and equity package",
+                "Comprehensive benefits package",
+                "Remote work flexibility",
+                "Learning and certification support",
+                "Modern office with recreational facilities"
+            ]
+        },
+        {
+            id: 4,
+            title: "Flutter Game Developer",
+            company: "GameCraft Studios",
+            location: "Los Angeles, CA",
+            description: "Join our game development team as a Flutter Game Developer. You'll work on innovative mobile games using Flutter's powerful rendering engine and animation capabilities. This role offers the opportunity to create engaging gaming experiences that reach millions of players worldwide.",
+            companyDetail: {
+                industry: "Gaming & Entertainment",
+                size: "100-300 employees",
+                founded: "2018",
+                website: "www.gamecraft-studios.com",
+                description: "GameCraft Studios is an independent game development studio focused on creating innovative mobile games. We combine creative storytelling with cutting-edge technology to deliver unique gaming experiences that captivate players across all platforms."
+            },
+            skills: ["Flutter", "Dart", "Game Development", "Animations", "Physics Engines", "Audio", "Graphics"],
+            requirements: [
+                "3+ years of game development experience",
+                "2+ years of Flutter development",
+                "Experience with game development frameworks",
+                "Knowledge of 2D/3D graphics programming",
+                "Familiarity with game physics and animations",
+                "Experience with audio integration",
+                "Understanding of game performance optimization"
+            ],
+            responsibilities: [
+                "Develop mobile games using Flutter",
+                "Implement game mechanics and interactions",
+                "Create smooth animations and visual effects",
+                "Optimize game performance for mobile devices",
+                "Integrate audio and visual assets",
+                "Collaborate with artists and designers"
+            ],
+            benefits: [
+                "Competitive salary with profit sharing",
+                "Health and dental insurance",
+                "Flexible work schedule",
+                "Creative and collaborative environment",
+                "Game development tools and resources"
+            ]
+        },
+        {
+            id: 5,
+            title: "Flutter DevOps Engineer",
+            company: "CloudMobile Inc",
+            location: "Denver, CO",
+            description: "We're looking for a Flutter DevOps Engineer to streamline our mobile app development and deployment processes. You'll work on CI/CD pipelines, automated testing, and deployment strategies that ensure our Flutter applications are delivered efficiently and reliably to users worldwide.",
+            companyDetail: {
+                industry: "DevOps & Cloud Services",
+                size: "75-200 employees",
+                founded: "2019",
+                website: "www.cloudmobile-inc.com",
+                description: "CloudMobile Inc specializes in mobile app DevOps and cloud infrastructure solutions. We help mobile development teams streamline their workflows and deploy applications at scale using modern DevOps practices and cloud technologies."
+            },
+            skills: ["Flutter", "Dart", "CI/CD", "Docker", "Kubernetes", "AWS", "GitLab"],
+            requirements: [
+                "4+ years of DevOps experience",
+                "2+ years of Flutter development experience",
+                "Strong knowledge of CI/CD pipelines",
+                "Experience with containerization (Docker, Kubernetes)",
+                "Familiarity with cloud platforms (AWS, GCP, Azure)",
+                "Knowledge of automated testing frameworks",
+                "Understanding of mobile app deployment processes"
+            ],
+            responsibilities: [
+                "Set up and maintain CI/CD pipelines for Flutter apps",
+                "Automate testing and deployment processes",
+                "Manage cloud infrastructure and services",
+                "Implement monitoring and logging solutions",
+                "Optimize build and deployment performance",
+                "Collaborate with development and QA teams"
+            ],
+            benefits: [
+                "Competitive salary with bonuses",
+                "Comprehensive health coverage",
+                "Remote work options",
+                "Professional development budget",
+                "Modern DevOps tools and equipment"
             ]
         }
     ]
@@ -442,7 +709,20 @@ function handleUserFormSubmit(e) {
 
 function showJobListPage(jobType = userData.jobType) {
     // Update page title
-    const jobTypeName = jobType === 'dotnet' ? '.NET Developer' : 'Shopify Developer';
+    let jobTypeName;
+    switch(jobType) {
+        case 'dotnet':
+            jobTypeName = '.NET Developer';
+            break;
+        case 'shopify':
+            jobTypeName = 'Shopify Developer';
+            break;
+        case 'flutter':
+            jobTypeName = 'Flutter Developer';
+            break;
+        default:
+            jobTypeName = 'Developer';
+    }
     document.getElementById('job-list-title').textContent = `${jobTypeName} Jobs`;
     
     // Load and display jobs
@@ -523,7 +803,7 @@ function createJobDescriptionHTML(job) {
             </div>
             
             <div class="section position">
-                <h3>Position: ${userData.jobType === 'dotnet' ? '.NET Developer' : 'Shopify Developer'}</h3>
+                <h3>Position: ${getJobTypeName(userData.jobType)}</h3>
             </div>
             
             <div class="section job-description">
@@ -544,12 +824,31 @@ function createJobDescriptionHTML(job) {
                     </div>
                     <div class="info-item">
                         <span class="info-label">Position:</span>
-                        <span class="info-value">${userData.jobType === 'dotnet' ? '.NET Developer' : 'Shopify Developer'}</span>
+                        <span class="info-value">${getJobTypeName(userData.jobType)}</span>
                     </div>
                     <div class="info-item">
                         <span class="info-label">Job ID:</span>
                         <span class="info-value">#${job.id}</span>
                     </div>
+                    <div class="info-item">
+                        <span class="info-label">Industry:</span>
+                        <span class="info-value">${job.companyDetail.industry}</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Company Size:</span>
+                        <span class="info-value">${job.companyDetail.size}</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Founded:</span>
+                        <span class="info-value">${job.companyDetail.founded}</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Website:</span>
+                        <span class="info-value">${job.companyDetail.website}</span>
+                    </div>
+                </div>
+                <div class="company-description">
+                    <p><strong>About ${job.company}:</strong> ${job.companyDetail.description}</p>
                 </div>
             </div>
             
@@ -634,7 +933,7 @@ async function sendTrackingEmail(trackingData) {
             subject: `Job Visit Tracking - ${trackingData.userName}`,
             user_name: trackingData.userName,
             user_email: trackingData.userEmail,
-            job_type: trackingData.jobType === 'dotnet' ? '.NET Developer' : 'Shopify Developer',
+            job_type: getJobTypeName(trackingData.jobType),
             job_id: trackingData.jobId,
             user_ip: trackingData.ip,
             timestamp: new Date(trackingData.timestamp).toLocaleString(),
@@ -646,7 +945,7 @@ New job description page visit tracked:
 User Details:
 - Name: ${trackingData.userName}
 - Email: ${trackingData.userEmail}
-- Job Type: ${trackingData.jobType === 'dotnet' ? '.NET Developer' : 'Shopify Developer'}
+- Job Type: ${getJobTypeName(trackingData.jobType)}
 
 Visit Details:
 - Job ID: ${trackingData.jobId}
@@ -694,6 +993,20 @@ function getPlatformInfo(userAgent) {
     if (userAgent.includes('Android')) return 'Android';
     if (userAgent.includes('iOS')) return 'iOS';
     return 'Unknown Platform';
+}
+
+// Helper function to get job type display name
+function getJobTypeName(jobType) {
+    switch(jobType) {
+        case 'dotnet':
+            return '.NET Developer';
+        case 'shopify':
+            return 'Shopify Developer';
+        case 'flutter':
+            return 'Flutter Developer';
+        default:
+            return 'Developer';
+    }
 }
 
 function showTrackingNotification() {
